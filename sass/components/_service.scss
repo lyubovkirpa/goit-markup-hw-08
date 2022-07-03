@@ -1,0 +1,42 @@
+/* section service */
+.service {
+  padding-top: 0;
+}
+
+.service__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.service__item {
+  position: relative;
+}
+
+.service__inscription {
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  & > p {
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-bgd-color);
+  }
+}
