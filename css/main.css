@@ -205,7 +205,10 @@ header {
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
+    padding-top: 0;
     margin-left: auto;
   }
   .contact__item + .contact__item {
