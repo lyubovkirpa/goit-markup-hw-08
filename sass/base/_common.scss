@@ -27,6 +27,24 @@ section {
   padding-bottom: var(--typical-padding);
 }
 
+.section-title {
+  font-weight: 700;
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+      font-size: 28px;
+      line-height: 1.18;
+  }
+  @media screen and (min-width: 768px) {
+      font-size: 28px;
+      line-height: 1.18;
+  }
+  @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -39,3 +57,4 @@ section {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
