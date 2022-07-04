@@ -192,19 +192,24 @@ header {
 /* contact */
 .contact {
   display: none;
-  margin-left: auto;
-}
-.contact__item + .contact__item {
-  margin-left: 50px;
 }
 @media screen and (min-width: 768px) {
   .contact {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+  .contact__item + .contact__item {
+    margin-left: 50px;
   }
 }
 
@@ -229,6 +234,14 @@ header {
 }
 .contact__link:hover {
   color: var(--bgd-color);
+}
+@media screen and (min-width: 768px) {
+  .contact__link {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 .contact__icon {
