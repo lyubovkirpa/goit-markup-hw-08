@@ -96,9 +96,19 @@ header {
 }
 
 .navigation__list {
-  display: flex;
+  display: none;
   margin-left: 93px;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__list {
+    display: flex;
+  }
 }
 
 .navigation__list .navigation__item + .navigation__item {
@@ -158,11 +168,21 @@ header {
 
 /* contact */
 .contact {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 .contact__item + .contact__item {
   margin-left: 50px;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+  }
 }
 
 .contact__link--header {
