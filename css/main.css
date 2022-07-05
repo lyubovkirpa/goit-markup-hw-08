@@ -982,9 +982,63 @@ appearance: none;
 .footer__logo span {
   color: var(--secondary-color);
 }
-.footer > .container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 320px) {
+  .footer > .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer > .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer > .container {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .footer__inform {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__inform {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__inform {
+    display: inline-block;
+  }
+}
+
+.footer-contact {
+  display: block;
+}
+@media screen and (min-width: 320px) {
+  .footer-contact {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-contact__adress {
@@ -993,6 +1047,19 @@ appearance: none;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 320px) {
+  .footer-contact__item {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact__item {
+    display: flex;
+    justify-content: start;
+  }
 }
 
 .footer-contact .footer-contact__link {
@@ -1011,11 +1078,26 @@ appearance: none;
 }
 
 .footer-contact .footer-contact__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact .footer-contact__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contact__social {
-  margin-left: 70px;
+  display: block;
+}
+@media screen and (min-width: 320px) {
+  .footer-contact__social {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact__social {
+    margin-left: 85px;
+  }
 }
 
 .footer-contact__text {
@@ -1026,6 +1108,18 @@ appearance: none;
   text-transform: uppercase;
   color: var(--main-bgd-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 320px) {
+  .footer-contact__text {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact__text {
+    display: flex;
+    justify-content: start;
+  }
 }
 
 .footer-soc-icon {
@@ -1077,13 +1171,48 @@ appearance: none;
 }
 
 /* speaker-form */
-.form-footer {
-  margin-left: auto;
+@media screen and (min-width: 320px) {
+  .form-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    display: block;
+    width: 570px;
+    margin-left: auto;
+  }
 }
 
 .form-footer__speaker {
   display: flex;
   color: var(--main-bgd-color);
+  display: block;
+}
+@media screen and (min-width: 320px) {
+  .form-footer__speaker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-footer__speaker {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-footer__speaker {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .form-footer__speaker input {
@@ -1103,6 +1232,27 @@ appearance: none;
 }
 .form-footer__speaker input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 320px) {
+  .form-footer__speaker input {
+    margin-bottom: 20px;
+    width: 290px;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .form-footer__speaker input {
+    margin-bottom: 20px;
+    width: 450px;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-footer__speaker input {
+    margin-bottom: 20px;
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .button-form {
