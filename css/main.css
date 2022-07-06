@@ -252,6 +252,7 @@ header {
 /* navigation */
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -275,8 +276,13 @@ header {
 
 .navigation__list {
   display: none;
-  margin-left: 93px;
-  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    margin-left: 93px;
+    align-items: center;
+  }
 }
 
 .navigation__list .navigation__item + .navigation__item {
