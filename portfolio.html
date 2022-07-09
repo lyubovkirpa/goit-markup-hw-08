@@ -181,14 +181,25 @@
             </li>
 
             <li class="item">
-              <a class="gallery-link">
+              <a class="gallery-link">       
                 <div class="gallery-overlay">
-                  <img
+   
+                  <picture>
+                    <source srcset="./images/portfolio-mob/gallery-img-1-tab.jpeg,
+                            ./images/portfolio-mob/gallery-img-1-tab.jpeg 2x"
+                        media="(min-width:1200px)" type="jpg"/>
+                    <source srcset="./images/portfolio-tablet-2x-1.jpg 1x,
+                            ./images/portfolio-mob/gallery-img-1-tab-2x.jpeg 2x"                      
+                        media="(min-width:768px)" type="jpeg"/>
+                    <source srcset="./images/portfolio-mob/portfolio-mob-1x-2.jpg 1x,
+                            ./images/portfolio-mob/portfolio-mob-2x-2.jpg 2x"
+                        media="(min-width:320px)" type="jpeg"/>
+                    <img
                     src="./images/Постер.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    class="item-img"
-                  />
+                    class="item-img"/>
+                  </picture>
+                 
                   <p class="gallery-overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
