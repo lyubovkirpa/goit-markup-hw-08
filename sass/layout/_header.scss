@@ -64,13 +64,11 @@ header {
   width: 100vw;
   height: 101vh;
   padding: 48px 40px;
-  .container {
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-  }
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .mob-navigation__item {

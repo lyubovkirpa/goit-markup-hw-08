@@ -158,8 +158,6 @@ header {
   width: 100vw;
   height: 101vh;
   padding: 48px 40px;
-}
-.mob-menu .container {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
