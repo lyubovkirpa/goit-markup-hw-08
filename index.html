@@ -32,23 +32,23 @@
                 <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
               </svg>
             </button>
-            
-             <ul class="navigation__list">
-               <li class="navigation__item">
-                 <a href="" class="navigation__link navigation__link--current"
+
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="" class="navigation__link navigation__link--current"
                   >Студия</a
-                  >
-               </li>
-               <li class="navigation__item">
-                 <a href="./portfolio.html" class="navigation__link"
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="navigation__link"
                   >Портфолио</a
-                 >
-               </li>
-               <li class="navigation__item">
+                >
+              </li>
+              <li class="navigation__item">
                 <a href="" class="navigation__link">Контакты</a>
-               </li>
-              </ul>
-            </nav>
+              </li>
+            </ul>
+          </nav>
           <ul class="contact">
             <li class="contact__item">
               <a
@@ -84,7 +84,9 @@
             </button>
             <ul class="mob-navigation__list">
               <li class="mob-navigation__item">
-                <a href="" class="mob-navigation__link mob-navigation__link--current"
+                <a
+                  href=""
+                  class="mob-navigation__link mob-navigation__link--current"
                   >Студия</a
                 >
               </li>
@@ -112,19 +114,17 @@
                   href="mailto:info@devstudio.com"
                   class="mob-contact__link mob-contact__link--mailto"
                   >info@devstudio.com</a
-                >                
+                >
               </li>
             </ul>
             <ul class="mob-soc__list">
               <li class="mob-soc__icon">Instagram</li>
               <li class="mob-soc__icon">Twitter</li>
               <li class="mob-soc__icon">Facebook</li>
-              <li class="mob-soc__icon-last">LinkedIn</li>
-            </ul>          
+              <li class="mob-soc__icon">LinkedIn</li>
+            </ul>
           </div>
         </div>
-      </div>
-
       </div>
     </header>
     <main>
@@ -139,7 +139,7 @@
       <section class="advantage">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="advantage__list">
+          <ul class="advantage__list card-set">
             <li class="advantage__item antenna">
               <h3 class="advantage__title">Внимание к деталям</h3>
               <p class="advantage__text">
@@ -176,7 +176,11 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="service__list">
             <li class="service__item">
-              <img srcset="./images/service-desktop/service-1-1x.jpg 1x, ./images/service-desktop/service-1-2x.jpg 2x"
+              <img
+                srcset="
+                  ./images/service-desktop/service-1-1x.jpg 1x,
+                  ./images/service-desktop/service-1-2x.jpg 2x
+                "
                 src="./images/img-0.jpg"
                 alt="Программированиие"
                 width="370"
@@ -186,7 +190,11 @@
               </div>
             </li>
             <li class="service__item">
-              <img srcset="./images/service-desktop/service-2-1x.jpg 1x, ./images/service-desktop/service-2-2x.jpg 2x"
+              <img
+                srcset="
+                  ./images/service-desktop/service-2-1x.jpg 1x,
+                  ./images/service-desktop/service-2-2x.jpg 2x
+                "
                 src="./images/img-1.jpg"
                 alt="Разработка мобильноо приложения"
                 width="370"
@@ -196,7 +204,11 @@
               </div>
             </li>
             <li class="service__item">
-              <img srcset="./images/service-desktop/service-3-1x.jpg 1x, ./images/service-desktop/service-3-2x.jpg 2x"
+              <img
+                srcset="
+                  ./images/service-desktop/service-3-1x.jpg 1x,
+                  ./images/service-desktop/service-3-2x.jpg 2x
+                "
                 src="./images/img-2.jpg"
                 alt="Цветовая палитра"
                 width="370"
@@ -211,33 +223,40 @@
       <section class="team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="team__list">
+          <ul class="team__list card-set">
             <li class="team__item">
-
               <picture>
                 <source
-                    srcset="./images/team-desktop/team-desktop-1x-1.jpg 1x,
-                        ./images/team-desktop/team-desktop-2x-1.jpg 2x
-                    "
-                    media="(min-width:1200px)"
+                  srcset="
+                    ./images/team-desktop/team-desktop-1x-1.jpg 1x,
+                    ./images/team-desktop/team-desktop-2x-1.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
                 />
                 <source
-                    srcset="./images/team-tablet/team-tablet-1x-1.jpg 1x,
-                        ./images/team-tablet/team-tablet-2x-1.jpg 2x
-                    "
-                    media="(min-width:768px)"
+                  srcset="
+                    ./images/team-tablet/team-tablet-1x-1.jpg 1x,
+                    ./images/team-tablet/team-tablet-2x-1.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
                 />
                 <source
-                    srcset="./images/team-mob/team-mob-1x-1.jpg 1x,
-                        ./images/team-mob/team-mob-2x-1.jpg 2x"
-                    media="(min-width:320px)"
+                  srcset="
+                    ./images/team-mob/team-mob-1x-1.jpg 1x,
+                    ./images/team-mob/team-mob-2x-1.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
                 />
                 <img
-                    src="./images/ИгорьДемьяненко.jpg"
-                alt="Игорь Демьяненко"                    
+                  src="./images/ИгорьДемьяненко.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
                 />
-            </picture>
-              
+              </picture>
+
               <div class="team__work">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__profession">Product Designer</p>
@@ -281,31 +300,38 @@
               </div>
             </li>
             <li class="team__item">
-
-            <picture>
+              <picture>
                 <source
-                    srcset="./images/team-desktop/team-desktop-1x-2.jpg 1x,
-                        ./images/team-desktop/team-desktop-2x-2.jpg 2x
-                    "
-                    media="(min-width:1200px)"
+                  srcset="
+                    ./images/team-desktop/team-desktop-1x-2.jpg 1x,
+                    ./images/team-desktop/team-desktop-2x-2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
                 />
                 <source
-                    srcset="./images/team-tablet/team-tablet-1x-2.jpg 1x,
-                        ./images/team-tablet/team-tablet-2x-2.jpg 2x
-                    "
-                    media="(min-width:768px)"
+                  srcset="
+                    ./images/team-tablet/team-tablet-1x-2.jpg 1x,
+                    ./images/team-tablet/team-tablet-2x-2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
                 />
                 <source
-                    srcset="./images/team-mob/team-mob-1x-2.jpg 1x,
-                        ./images/team-mob/team-mob-2x-2.jpg 2x"
-                    media="(min-width:320px)"
+                  srcset="
+                    ./images/team-mob/team-mob-1x-2.jpg 1x,
+                    ./images/team-mob/team-mob-2x-2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
                 />
                 <img
-                    src="./images/ОльгаРепина.jpg"
-                alt="Ольга Репина"                 
+                  src="./images/ОльгаРепина.jpg"
+                  alt="Ольга Репина"
+                  width="270"
                 />
-            </picture>           
-              
+              </picture>
+
               <div class="team__work">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__profession">Frontend Developer</p>
@@ -348,32 +374,39 @@
               </div>
             </li>
             <li class="team__item">
-
-            <picture>
+              <picture>
                 <source
-                    srcset="./images/team-desktop/team-desktop-1x-3.jpg 1x,
-                        ./images/team-desktop/team-desktop-2x-3.jpg 2x
-                    "
-                    media="(min-width:1200px)"
+                  srcset="
+                    ./images/team-desktop/team-desktop-1x-3.jpg 1x,
+                    ./images/team-desktop/team-desktop-2x-3.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
                 />
                 <source
-                    srcset="./images/team-tablet/team-tablet-1x-3.jpg 1x,
-                        ./images/team-tablet/team-tablet-2x-3.jpg 2x
-                    "
-                    media="(min-width:768px)"
+                  srcset="
+                    ./images/team-tablet/team-tablet-1x-3.jpg 1x,
+                    ./images/team-tablet/team-tablet-2x-3.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
                 />
                 <source
-                    srcset="./images/team-mob/team-mob-1x-3.jpg 1x,
-                        ./images/team-mob/team-mob-2x-3.jpg 2x"
-                    media="(min-width:320px)"
+                  srcset="
+                    ./images/team-mob/team-mob-1x-3.jpg 1x,
+                    ./images/team-mob/team-mob-2x-3.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
                 />
                 <img
-                    src="./images/НиколайТарасов.jpg"
-                alt="Николай Тарасов"            
+                  src="./images/НиколайТарасов.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
                 />
-            </picture>         
+              </picture>
 
-                <div class="team__work">
+              <div class="team__work">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__profession">Marketing</p>
                 <ul class="social-list">
@@ -415,31 +448,38 @@
               </div>
             </li>
             <li class="team__item">
-
-            <picture>
+              <picture>
                 <source
-                    srcset="./images/team-desktop/team-desktop-1x-4.jpg 1x,
-                        ./images/team-desktop/team-desktop-2x-4.jpg 2x
-                    "
-                    media="(min-width:1200px)"
+                  srcset="
+                    ./images/team-desktop/team-desktop-1x-4.jpg 1x,
+                    ./images/team-desktop/team-desktop-2x-4.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
                 />
                 <source
-                    srcset="./images/team-tablet/team-tablet-1x-4.jpg 1x,
-                        ./images/team-tablet/team-tablet-2x-4.jpg 2x
-                    "
-                    media="(min-width:768px)"
+                  srcset="
+                    ./images/team-tablet/team-tablet-1x-4.jpg 1x,
+                    ./images/team-tablet/team-tablet-2x-4.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
                 />
                 <source
-                    srcset="./images/team-mob/team-mob-1x-4.jpg 1x,
-                        ./images/team-mob/team-mob-2x-4.jpg 2x"
-                    media="(min-width:320px)"
+                  srcset="
+                    ./images/team-mob/team-mob-1x-4.jpg 1x,
+                    ./images/team-mob/team-mob-2x-4.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
                 />
                 <img
-                    src="./images/МихаилЕрмаков.jpg"
-                alt="Михаил Ермаков"         
+                  src="./images/МихаилЕрмаков.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
                 />
-            </picture>         
-             
+              </picture>
+
               <div class="team__work">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__profession">UI Designer</p>
@@ -659,8 +699,10 @@
           <div class="check">
             <label class="check__label">
               <input class="check__input visually-hidden" type="checkbox" />
-              <span class="check__box"></span> Соглашаюсь с рассылкой и
-              принимаю<a class="checkbox__link" href="">Условия договора</a>
+              <span class="check__box"></span> Соглашаюсь с рассылкой и принимаю
+              <span class="">
+                <a class="checkbox__link" href="">Условия договора</a></span
+              >
             </label>
           </div>
           <button class="modal__button" type="submit">Отправить</button>

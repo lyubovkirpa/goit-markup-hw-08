@@ -6,6 +6,7 @@
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 400ms, visibility 400ms;
+  overflow-y: auto;
 }
 
 .backdrop.is-hidden .modal {
@@ -13,8 +14,9 @@
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  max-width: 450px;
+
   background-color: var(--main-bgd-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -25,18 +27,9 @@
   transition: transform 500ms;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   padding: 40px;
-
-  @media screen and (min-width: 320px) {
-    width: 290px;
-    min-height: 689px;
-  }
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    min-height: 609px;
-  }
   @media screen and (min-width: 1200px) {
+    min-width: 528px;
     width: 528px;
-    min-height: 581px;
   }
 }
 
@@ -139,18 +132,19 @@
 
 /* check */
 .check {
+  display: flex;
   margin-bottom: 30px;
   margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .check__label {
-  display: flex;
   font-size: 12px;
   line-height: 1.17;
-  align-items: center;
-  justify-content: center;
+  white-space: nowrap;
   @media screen and (min-width: 1200px) {
-    display: flex;
     font-size: 14px;
     line-height: 1.7;
   }
@@ -170,7 +164,6 @@ appearance: none;
   border: 2px solid #212121;
   border-radius: 3px;
   margin-right: 7px;
-   
 }
 
 .check__input:checked + .check__box {

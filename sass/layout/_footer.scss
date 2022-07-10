@@ -20,20 +20,19 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  }
-  @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: space-around;
       align-items: flex-start;
-  }
-  @media screen and (min-width: 1200px) {
+    }
+    @media screen and (min-width: 1200px) {
       display: flex;
       flex-wrap: wrap;
       display: flex;
       align-items: baseline;
-  }
+    }
   }
 }
 
@@ -44,23 +43,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-@media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-@media screen and (min-width: 1200px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
     display: inline-block;
-}
+  }
 }
 
 .footer-contact {
-    display: block;
-    @media screen and (min-width: 320px) {
-        margin-bottom: 60px;
-    }
+  display: block;
 }
 
 .footer-contact__adress {
@@ -72,14 +70,14 @@
 }
 
 .footer-contact__item {
- @media screen and (min-width: 320px) {
+  @media screen and (min-width: 320px) {
     display: flex;
     justify-content: center;
-}
-@media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: start;    
-}
+    justify-content: start;
+  }
 }
 
 .footer-contact .footer-contact__link {
@@ -106,10 +104,10 @@
 .footer-contact__social {
   display: block;
   @media screen and (min-width: 320px) {
-      margin-bottom: 60px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
-      margin-left: 85px;
+    margin-left: 85px;
   }
 }
 
@@ -121,14 +119,14 @@
   text-transform: uppercase;
   color: var(--main-bgd-color);
   margin-bottom: 20px;
-  
+
   @media screen and (min-width: 320px) {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
   @media screen and (min-width: 1200px) {
-      display: flex;
-      justify-content: start;
+    display: flex;
+    justify-content: start;
   }
 }
 
@@ -182,13 +180,12 @@
 }
 
 /* speaker-form */
-.form-footer { 
-@media screen and (min-width: 320px) {
-   
+.form-footer {
+  @media screen and (min-width: 320px) {
     flex-wrap: wrap;
     justify-content: center;
-}
-@media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1200px) {
     display: block;
     width: 570px;
     margin-left: auto;
@@ -199,23 +196,23 @@
   display: flex;
   color: var(--main-bgd-color);
   display: block;
-    @media screen and (min-width: 320px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    }
+  @media screen and (min-width: 320px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .form-footer__speaker input {
@@ -232,24 +229,24 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: rgba(33, 150, 243, 0);
-   &::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-@media screen and (min-width: 320px) {
-  margin-bottom: 20px;
-  width: 290px;
-  margin-right: 0px;
-}
-@media screen and (min-width: 480px) {
-  margin-bottom: 20px;
-  width: 450px;
-  margin-right: 0px;
-}
-@media screen and (min-width: 1200px) {
-  margin-bottom: 20px;
-  width: 358px;
-  margin-right: 12px;
-}
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (min-width: 320px) {
+    margin-bottom: 20px;
+    width: 290px;
+    margin-right: 0px;
+  }
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+    width: 450px;
+    margin-right: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .button-form {
