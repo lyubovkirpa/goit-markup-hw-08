@@ -198,10 +198,6 @@ header {
   margin-bottom: 32px;
 }
 
-.mob-contact__item--mailto {
-  margin-bottom: 64px;
-}
-
 .mob-contact__link {
   font-weight: 500;
   letter-spacing: 0.02em;
