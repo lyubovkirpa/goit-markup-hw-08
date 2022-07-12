@@ -1,8 +1,7 @@
 /* footer */
 .footer {
   background-color: var(--accent-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+
   &__logo {
     font-family: Raleway;
     color: var(--bgd-color);
@@ -15,22 +14,16 @@
   }
   & > .container {
     @media screen and (min-width: 320px) {
-      display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       align-items: flex-start;
+      justify-content: center;
     }
     @media screen and (min-width: 1200px) {
-      display: flex;
-      flex-wrap: wrap;
-      display: flex;
       align-items: baseline;
     }
   }
@@ -39,21 +32,17 @@
 .footer__inform {
   @media screen and (min-width: 320px) {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin-right: 165px;
   }
   @media screen and (min-width: 1200px) {
     display: inline-block;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -103,7 +92,7 @@
 
 .footer-contact__social {
   display: block;
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 768px) {
     margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
@@ -216,7 +205,6 @@
 }
 
 .form-footer__speaker input {
-  width: 358px;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -224,7 +212,6 @@
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-right: 12px;
   color: var(--main-bgd-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -233,19 +220,17 @@
     color: rgba(255, 255, 255, 0.6);
   }
   @media screen and (min-width: 320px) {
+    width: 100%;
     margin-bottom: 20px;
-    width: 290px;
-    margin-right: 0px;
   }
   @media screen and (min-width: 480px) {
     margin-bottom: 20px;
     width: 450px;
-    margin-right: 0px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 20px;
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0px;
   }
 }
 

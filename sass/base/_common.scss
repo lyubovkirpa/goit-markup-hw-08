@@ -6,6 +6,11 @@ body {
   font-size: 14px;
 }
 
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
 .container {
   width: 100%;
   padding: 0 15px;
@@ -22,26 +27,22 @@ body {
   }
 }
 
-section {
-  padding-top: var(--typical-padding);
-  padding-bottom: var(--typical-padding);
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
   font-weight: 700;
   text-align: center;
-
-  @media screen and (min-width: 480px) {
-    font-size: 28px;
-    line-height: 1.18;
-  }
-  @media screen and (min-width: 768px) {
-    font-size: 28px;
-    line-height: 1.18;
-  }
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
+  color: var(--title-text-color);
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 

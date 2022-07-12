@@ -1,30 +1,19 @@
 /* portfolio section */
 .portfolio {
-  @media screen and (min-width: 320px) and (max-width: 1200px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--typical-padding);
+    padding-bottom: var(--typical-padding);
   }
 }
 
 .gallery-list {
-  margin-bottom: -30px;
-  cursor: pointer;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-  }
-  // @media screen and (min-width: 1200px) {
-  //   margin-left: -30px;
-  // }
   & .item {
-    margin-bottom: 30px;
+    width: 100%;
     @media screen and (min-width: 768px) {
-      width: calc(100% / 2 - 30px);
-      margin-left: 30px;
+      width: calc((100% - 30px) / 2);
     }
     @media screen and (min-width: 1200px) {
-      width: calc(100% / 3 - 30px);
+      width: calc((100% - 60px) / 3);
     }
   }
 }
@@ -39,7 +28,6 @@
 .gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  display: block;
 }
 
 /* portfolio gallery-cards */
@@ -100,9 +88,6 @@
 
 /*  portfolio button */
 .list-button {
-  display: flex;
-  flex-wrap: wrap;
-  // gap: 7px;
   column-gap: 7px;
   row-gap: 15px;
   margin-bottom: 40px;
@@ -112,12 +97,10 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
-    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
   }

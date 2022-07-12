@@ -2,24 +2,16 @@
 .service {
   padding-top: 0;
   display: none;
-
   @media screen and (min-width: 1200px) {
     display: flex;
+    padding-top: var(--typical-padding);
+    padding-bottom: var(--typical-padding);
   }
 }
 
 .service__list {
   display: flex;
   justify-content: space-between;
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .service__item {
