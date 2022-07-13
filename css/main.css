@@ -956,6 +956,7 @@ header {
   display: flex;
   font-size: 12px;
   line-height: 1.17;
+  align-items: center;
   cursor: pointer;
 }
 @media screen and (min-width: 1200px) {
@@ -1049,8 +1050,8 @@ appearance: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: center;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
